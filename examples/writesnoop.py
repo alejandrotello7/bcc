@@ -74,7 +74,7 @@ bpf_text_kprobe_body = """
 
     events.perf_submit(ctx, &data, sizeof(data));
 
-    // Don't actually execute the syscall
+    // Don't actually execute the syscall from user
     bpf_override_return(ctx, -EPERM);
     return 0;
 }

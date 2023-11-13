@@ -7,7 +7,7 @@ def main():
     print(f"My PID: {pid}")
 
     # Wait for X seconds (replace X with the desired number)
-    wait_time = 30
+    wait_time = 20
     print(f"Waiting for {wait_time} seconds...")
     time.sleep(wait_time)
 

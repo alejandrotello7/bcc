@@ -14,6 +14,8 @@ def main():
     # Open a file called test.txt
     file_path = "/home/atello/bcc/examples/test.txt"
     with open(file_path, 'w') as file:
+        fd = file.fileno()
+        print("File Descriptor:", fd)
         file.write("Hello, this is a test file!\n")
 
     print(f"File '{file_path}' created.")

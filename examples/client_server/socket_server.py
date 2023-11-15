@@ -7,7 +7,7 @@ PORT = 12345
 
 def handle_client(client_socket):
     data = client_socket.recv(1024)
-    print(f"Received message from BPF program: {data.decode('utf-8')}")
+    print(f"Received message from BPF program: {data}")
     client_socket.close()
 
 def start_server():

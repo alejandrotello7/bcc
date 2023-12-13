@@ -15,10 +15,11 @@ def main():
     file_path = "/home/atello/bcc/examples/test.txt"
     with open(file_path, 'w') as file:
         fd = file.fileno()
-        print("File Descriptor:", fd)
-        file.write("Hello, this is a test file!\n")
+        time.sleep(5)
+        # print("File Descriptor:", fd)
+        file.write("Hello(3), this is a test file!\n")
 
-    print(f"File '{file_path}' created.")
+    # print(f"File '{file_path}' created.")
 
 if __name__ == "__main__":
     main()
